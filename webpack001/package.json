@@ -1,7 +1,12 @@
 {
   "devDependencies": {
+    "css-loader": "^3.5.3",
+    "csv-loader": "^3.0.3",
+    "file-loader": "^6.0.0",
     "lodash": "^4.17.15",
-    "webpack-cli": "^3.3.11"
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.11",
+    "xml-loader": "^1.2.1"
   },
   "name": "webpack001",
   "version": "1.0.0",
