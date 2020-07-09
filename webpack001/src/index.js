@@ -9,7 +9,7 @@ import printMe from './print.js';
 function component() {
   var element = document.createElement('div');
   var btn = document.createElement('button');
-
+  btn.innerText = "clickMe";
   // Lodash now imported by this script
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   btn.onclick = printMe;
