@@ -1,0 +1,18 @@
+/*
+ * @Description: 管理员
+ * @Author: zsf
+ * @Date: 2020-07-24 17:38:58
+ */ 
+import Admin from '../pages/Admin';
+
+const adminRoutes = [
+  {
+    path: '/admin',
+    component: Admin,
+    exact: true,
+    role: 'admin',       // 需要的权限是admin
+    backUrl: '/backend'  // 不满足权限跳回后台页面
+  },
+];
+
+export default adminRoutes;
