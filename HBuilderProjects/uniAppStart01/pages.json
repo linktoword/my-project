@@ -1,0 +1,47 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "首页"
+		}
+	}, {
+		"path": "pages/blog/blog",
+		"style": {
+			"navigationBarTitleText": "Blog"
+		}
+	}, {
+		"path": "pages/profile/profile",
+		"style": {}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#00aaff",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#1296db",
+		"borderStyle": "#eeeeee",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab_class.png",
+				"selectedIconPath": "static/tab_class_seleted.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/blog/blog",
+				"iconPath": "static/tab_blog.png",
+				"selectedIconPath": "static/tab_blog_seleted.png",
+				"text": "博客"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"iconPath": "static/tab_profile.png",
+				"selectedIconPath": "static/tab_profile_seleted.png",
+				"text": "我的"
+			}
+		]
+	}
+}
