@@ -1,7 +1,10 @@
 <template>
 	<view>
 		我是Blog页面
-		<text>{{ count }}</text>
+		<button type="default" @click="uploadImg">上传图片</button>
+		<view class="">
+			<image v-for="item in imgList" :key="item" :src="item" @click="previewImg(item)" mode="aspectFit"></image>
+		</view>
 	</view>
 </template>
 
@@ -9,16 +12,26 @@
 	export default {
 		data() {
 			return {
-				count: 0
+				imgList: []
 			}
 		},
 		methods: {
-			
+			uploadImg() {
+				uni.chooseImage({
+					count: 5,
+					sizeType: "original",
+					success: (res) => {
+						console.log(res);
+						this.imgList = res.tempFilePaths;
+					}
+				})
+			},
+			previewImg(item) {
+				uni.previewImage({
+					
+				})
+			}
 		},
-		onLoad(option) {
-			console.log(option);
-			this.count = option.count;
-		}
 	}
 </script>
 

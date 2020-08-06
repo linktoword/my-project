@@ -11,7 +11,9 @@
 		}
 	}, {
 		"path": "pages/profile/profile",
-		"style": {}
+		"style": {
+			"navigationBarTitleText": "个人中心"
+		}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -22,7 +24,7 @@
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#1296db",
-		"borderStyle": "#eeeeee",
+		"borderStyle": "black",
 		"backgroundColor": "#F8F8F8",
 		"list": [{
 				"pagePath": "pages/index/index",
